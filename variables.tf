@@ -34,7 +34,12 @@ variable "start_window" {
 }
 
 variable "completion_window" {
-   description = "The amount of time AWS Backup attempts a backup before canceling the job and returning an error"
+  description = "The amount of time AWS Backup attempts a backup before canceling the job and returning an error"
   type        = number
   default     = 120
+}
+
+variable "delete_after" {
+  type    = number
+  default = 7
 }
